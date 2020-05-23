@@ -21,6 +21,14 @@ const Header = () => (
             <li class="nav-item ">
               <a class="nav-link" href="index.html">Overview</a>
             </li>
+
+            <li class="nav-item ">
+              <a class="nav-link" href="index.html">Abbreviations</a>
+            </li>
+
+            <li class="nav-item ">
+              <a class="nav-link" href="index.html">Contact</a>
+            </li>
        
           </ul>
           

@@ -18,7 +18,7 @@ const Layout = (props) => (
             <link rel="stylesheet" href="/assets/css/bourbonmsrp.css" id="stylesheet" />
         </Head>
         <Header />
-        <Search />
+        
         <div className="main-content">
             <section class="slice bg-section-secondary">
                  <div class="container">
@@ -26,6 +26,12 @@ const Layout = (props) => (
                 </div>
             </section>
         </div>
+
+        <script src="/assets/js/purpose.core.js"></script>
+        <script src="/assets/libs/apexcharts/dist/apexcharts.min.js"></script>
+        <script src="/assets/js/purpose.js"></script>
+        <script src="/assets/js/bourbonmsrp.js"></script>
+
     </main>
 
     
