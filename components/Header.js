@@ -4,11 +4,11 @@ const Header = () => (
   
     <header class="header header-transparent" id="header-main">
 
-    <nav class="navbar navbar-main navbar-expand-lg navbar-dark bg-dark" id="navbar-main">
+    <nav class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light bg-white" id="navbar-main">
       <div class="container px-lg-0">
 
         <a class="navbar-brand mr-lg-5" href="index.html">
-          Bourbon MSRP
+          bourbon msrp
         </a>
 
         <button class="navbar-toggler pr-0" type="button" data-toggle="collapse" data-target="#navbar-main-collapse" aria-controls="navbar-main-collapse" aria-expanded="false" aria-label="Toggle navigation">
