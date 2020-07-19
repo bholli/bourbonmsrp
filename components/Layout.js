@@ -1,39 +1,28 @@
 import Link from 'next/link'
-import Head from 'next/head'
-import Header from './Header'
+import Nav from './Nav'
+import Footer from './Footer'
+import Scripts from './Scripts'
 
 const Layout = (props) => (
-    <main>
-        <Head>
-            <meta charset="utf-8" />
-            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-            <meta name="description" content="BourbonMSRP.com is a list of bourbons along with their retail and secondary prices." />
-            <meta name="author" content="BourbonMSRP.com" />
-            <title>bourbon msrp - A list of bourbons along with their retail and secondary prices.</title>
-            <link rel="icon" href="/assets/img/brand/favicon.png" type="image/png" />
-            <link rel="stylesheet" href="/assets/libs/@fortawesome/fontawesome-free/css/all.min.css" />
-            <link rel="stylesheet" href="/assets/libs/swiper/dist/css/swiper.min.css" />
-            <link rel="stylesheet" href="/assets/css/purpose.css" id="stylesheet" />
-            <link rel="stylesheet" href="/assets/css/bourbonmsrp.css" id="stylesheet" />
-        </Head>
+    <>
+        <Nav />
 
-        
-        <div className="main-content">
-            <section class="slice bg-section-secondary">
-                 <div class="container">
-                     {props.children}
+        <main>
+            <div class="preloader bg-black flex-column justify-content-center align-items-center">
+                <div class="position-relative">
+                    <img class="navbar-brand-light common" src="/assets/img/loading.gif" alt="bourbon msrp loading animation" />
                 </div>
-            </section>
-        </div>
+            </div>
+            <div class="container">
+                {props.children}
+            </div>
+        </main>
 
-        <script src="/assets/js/purpose.core.js"></script>
-        <script src="/assets/libs/apexcharts/dist/apexcharts.min.js"></script>
-        <script src="/assets/js/purpose.js"></script>
-        <script src="/assets/js/bourbonmsrp.js"></script>
+        <Footer />
 
-    </main>
-
-    
+        <Scripts />
+        
+    </>
 )
 
 export default Layout

@@ -1,9 +1,0 @@
-.bourbon_listing{cursor: pointer;}
-.bourbon_listing h5.bourbon_name{
-    text-overflow: ellipsis;
-    overflow: hidden;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    height: 50px;
-}

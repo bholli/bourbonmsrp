@@ -1,0 +1,71 @@
+.bg-black{
+    background-color: #000!important;
+}
+.btn-black{
+    background: #000;
+    border: #000;
+}
+.form-group.shadow-soft{
+    border: 1px solid #e0e0e0;
+}
+main{
+    background: #fff;
+}
+
+.preloader{background: #5c636d!important;}
+.preloader img{
+    height: 240px;
+}
+
+/*start: navbar*/
+.navbar-brand img {
+    height: 22px;
+}
+
+.navbar .navbar-nav .nav-link {
+    font-size: .95rem;
+}
+
+.navbar-nav .nav-link i {
+    font-size: 1.03rem!important;
+    padding: .01rem;
+}
+.navbar-nav .nav-link i.instagram{
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    background: -webkit-linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.navbar-nav .nav-link i.facebook{
+    color: #3b5998;
+}
+
+.navbar-nav .nav-link i.youtube{
+    color: #c4302b;
+}
+/*end: navbar*/
+
+/*start: bourbons*/
+.section-header.bourbons{
+    padding-top: 6.5rem;
+}
+
+.card-bourbon{
+    margin: 1.5rem 0 3.5rem;
+}
+.card-bourbon h2.card-title{
+    font-size: 1.25rem;
+    color: #020202;
+}
+.img-bourbon{
+    width: auto;
+}
+.msrp{
+    background: #ff5a02;
+    padding: 2px 6px;
+    font-weight: bold!important;
+    color: #000!important;
+}
+/*end: bourbons*/

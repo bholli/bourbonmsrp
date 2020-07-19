@@ -1,44 +1,59 @@
+import Head from 'next/head'
 import Link from 'next/link'
-import Layout from '../components/Layout'
 import Fetch from 'isomorphic-unfetch'
+import Layout from '../components/Layout'
+import Styles from '../components/Styles'
+
 
 const Page = ({bourbons}) => (
-    <div>
-        <Layout>
+    <>
 
-            <div className="container">
-                <div className="row" id="bourbons">
-                    
-                    {bourbons.map(bourbon => (
+        <Head>
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+            <title>BourbonMSRP.com</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-                        <div class="col-xl-3 col-lg-4 col-md-6 bourbon_listing">
-                          
-                          <div class="card hover-shadow-lg hover-translate-y-n10">
-                            <div class="card-body text-center">
-                              <div class="avatar-parent-child">
-                                  <img src={`http://api.bourbonspotter.com${bourbon.image.formats.thumbnail.url}`} alt='' />
-                                <span class="avatar-child avatar-badge bg-info"></span>
-                              </div>
-                              <h5 class="mt-3 mb-0 bourbon_name">{bourbon.name}</h5>
-                            </div>
-                            <div class="card-footer">
-                              <div class="actions d-flex justify-content-between">
-                    <div className="action-item btn btn-block">
-                    <span class="btn-inner--icon">${bourbon.msrp}</span>
-                                  </div>
-                              </div>
-                            </div>
-                          </div>
-                          
-                        </div>
-                ))}
+            <meta name="title" content="Spaces - Blank page"/>
+            <meta name="author" content="Themesberg"/>
+            <meta name="description" content="Premium Directory Listing Bootstrap 4 Template featuring 37 hand-crafted pages, a dashboard an Mapbox integration. Spaces also comes with a complete UI Kit featuring over 700 components by Themesberg."/>
+            <meta name="keywords" content="bootstrap, bootstrap 4 template, directory listing bootstrap, bootstrap 4 listing, bootstrap listing, bootstrap 4 directory listing template, vector map, leaflet js template, mapbox theme, mapbox template, dashboard, themesberg, user dashboard bootstrap, dashboard bootstrap, ui kit, bootstrap ui kit, premium bootstrap theme" />
+            <link rel="canonical" href="https://themesberg.s3.us-east-2.amazonaws.com/public/products/spaces/thumbnail.jpg"/>
 
-                </div>
-            </div>
             
+            <meta property="og:type" content="website"/>
+            <meta property="og:url" content="https://demo.themesberg.com/pixel-pro"/>
+            <meta property="og:title" content="Spaces - Blank page"/>
+            <meta property="og:description" content="Premium Directory Listing Bootstrap 4 Template featuring 37 hand-crafted pages, a dashboard an Mapbox integration. Spaces also comes with a complete UI Kit featuring over 700 components by Themesberg."/>
+            <meta property="og:image" content="https://themesberg.s3.us-east-2.amazonaws.com/public/products/spaces/thumbnail.jpg"/>
+
+            
+            <meta property="twitter:card" content="summary_large_image"/>
+            <meta property="twitter:url" content="https://demo.themesberg.com/pixel-pro"/>
+            <meta property="twitter:title" content="Spaces - Blank page"/>
+            <meta property="twitter:description" content="Premium Directory Listing Bootstrap 4 Template featuring 37 hand-crafted pages, a dashboard an Mapbox integration. Spaces also comes with a complete UI Kit featuring over 700 components by Themesberg."/>
+            <meta property="twitter:image" content="https://themesberg.s3.us-east-2.amazonaws.com/public/products/spaces/thumbnail.jpg"/>
+
+            <Styles />
+            
+        </Head>
+        
+        <Layout>
+            <div>
+                {bourbons.map(bourbon => (
+                    <div>
+                        <Link href='/bourbons/[slug]' as={`/bourbons/${bourbon.slug}`}>
+                            <a>
+                                <img src={`https://api.bourbonspotter.com${bourbon.image.formats.thumbnail.url}`} alt='' />
+                                <h2 class="">{bourbon.name}</h2>
+                                <span>{bourbon.msrp}</span>
+                            </a>
+                        </Link>
+                    </div>
+                ))}
+            </div>
         </Layout>
-    </div>
-    
+
+    </>
 )
 
 Page.getInitialProps = async function(){
