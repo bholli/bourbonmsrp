@@ -39,9 +39,9 @@ const Page = ({ website }) => {
                 <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png"/>
                 <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png"/>
                 <link rel="manifest" href="/assets/img/favicon/site.webmanifest"/>
-                <link rel="mask-icon" href="/assets/img/favicon/safari-pinned-tab.svg" color="#ffffff"/>
-                <meta name="msapplication-TileColor" content="#ffffff"/>
-                <meta name="theme-color" content="#ffffff"/>
+                <link rel="mask-icon" href="/assets/img/favicon/safari-pinned-tab.svg" color="#000"/>
+                <meta name="msapplication-TileColor" content="#000"/>
+                <meta name="theme-color" content="#000"/>
                 <link type="text/css" href="/vendor/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet"/>
                 <link type="text/css" href="/vendor/leaflet/dist/leaflet.css" rel="stylesheet"/>
                 <link rel="stylesheet" href="/vendor/@fancyapps/fancybox/dist/jquery.fancybox.min.css"/>
