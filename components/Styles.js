@@ -22,8 +22,6 @@ const Styles = () => (
 
         <link type="text/css" href="/css/styles.css" rel="stylesheet"/>
 
-        <script type='text/javascript' src='https://platform-api.sharethis.com/js/sharethis.js#property=5f03debc2f9b510012b4b6a8&product=inline-share-buttons&cms=sop' async='async'></script>
-
     </>
 )
 

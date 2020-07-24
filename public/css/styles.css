@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+.mt4rem{margin-top: 4rem;}
+.hide{display: none;}
+body,p,li,h1,h2,h3,h4,h5,h6{color: #000;}
+footer p, .bg-black p{color: #fff;}
 .bg-black{
     background-color: #000!important;
 }
@@ -17,13 +22,34 @@ main{
     height: 240px;
 }
 
+.section-header{
+    padding-top: 1rem;
+}
+
 /*start: navbar*/
+
+.navbar_global{
+    margin: 0 auto;
+}
+.navbar-main{
+    position: relative;
+}
+.navbar-nav.justify-content-center{margin: 0 auto;}
+.navbar-brand-container{
+    text-align: center;
+}
+
 .navbar-brand img {
-    height: 22px;
+    height: 108px;
+    display: block;
 }
 
 .navbar .navbar-nav .nav-link {
-    font-size: .95rem;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+    color: #000;
+    font-weight: 500;
+    letter-spacing: .02rem;
 }
 
 .navbar-nav .nav-link i {
@@ -48,9 +74,6 @@ main{
 /*end: navbar*/
 
 /*start: bourbons*/
-.section-header.bourbons{
-    padding-top: 6.5rem;
-}
 
 .card-bourbon{
     margin: 1.5rem 0 3.5rem;
@@ -58,14 +81,281 @@ main{
 .card-bourbon h2.card-title{
     font-size: 1.25rem;
     color: #020202;
+    font-family: 'Roboto Slab', serif;
 }
 .img-bourbon{
     width: auto;
 }
 .msrp{
-    background: #ff5a02;
+    background: #000;
     padding: 2px 6px;
     font-weight: bold!important;
-    color: #000!important;
+    color: #fff!important;
+}
+
+.card-bourbon .card-title {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height: 50px;
+    margin-bottom: 24px!important;
+}
+
+.card-bourbon-view{
+    
+}
+
+.card-bourbon-view .img-bourbon{
+    width: auto;
+    max-height: 500px;
+}
+
+.card-bourbon-view .card-title{
+    color: #020202;
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 2rem;
+}
+
+.card-bourbon-view .msrp{
+    font-size: 2rem;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+}
+
+.card-bourbon-view .share{
+    margin: 3rem auto 3rem;
+}
+
+.card-bourbon-view h2{
+    font-family: medium-content-serif-font, "Roboto Slab", Georgia, Cambria, "Times New Roman", Times, serif;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.card-bourbon-view .bourbon-notes{
+    font-family: medium-content-serif-font, "Roboto Slab", Georgia, Cambria, "Times New Roman", Times, serif;
+    font-weight: 200;
+    text-align: left;
+    font-size: 1.25rem;
+    margin: 2.5rem auto;
+}
+
+.card-bourbon-view .bourbon-videos{
+    margin: 2rem 0;
+}
+
+.card-bourbon-view .bourbon-videos .video{
+    margin-bottom: 3rem;
+}
+
+.card-bourbon-view .bourbon-videos .video h3{
+    font-size: 22px;
+    font-weight: 400;
+    text-align: left;
+    font-family: medium-content-serif-font, "Roboto Slab", Georgia, Cambria, "Times New Roman", Times, serif;
+    color: #000;
+}
+
+.card-bourbon-view .bourbon-videos .video > div{
+    height: auto!important;
+    width: auto!important;
+}
+
+.card-bourbon-view .bourbon-videos .video > div > div{
+    position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;
+}
+.card-bourbon-view .bourbon-videos .video > div > div > iframe {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
 }
 /*end: bourbons*/
+
+/*start: abbreviations*/
+.card-abbreviation-view{
+
+}
+
+.card-abbreviation-view .card-title{
+    background: #000;
+    margin: 0 auto;
+    padding: 2rem 2.5rem;
+    color: #fff;
+    font-family: medium-content-serif-font, "Roboto Slab", Georgia, Cambria, "Times New Roman", Times, serif;
+    font-weight: normal;
+    margin-bottom: .5rem;
+}
+
+.card-abbreviation-view .description{
+    font-family: medium-content-serif-font, "Roboto Slab", Georgia, Cambria, "Times New Roman", Times, serif;
+    font-weight: normal;
+    font-size: 2.25rem;
+    margin: .75rem auto 2.5rem;
+}
+/*end: abbreviations*/
+
+/*start: store*/
+
+.card-website .card-title{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    height: 1.6rem;
+    margin-bottom: 24px!important;
+    font-family: medium-content-serif-font, "Roboto Slab", Georgia, Cambria, "Times New Roman", Times, serif;
+    width: auto;
+}
+
+.card-website .website{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    width: auto;
+}
+
+.card-website-view{
+    margin-bottom: 8rem;
+}
+
+.card-website-view .card-title{
+    color: #020202;
+    font-family: 'Roboto Slab', serif;
+    margin: 1.5rem auto 0;
+    font-size: 2rem;
+}
+
+.card-website-view .img-website{
+    width: 250px;
+    height: auto;
+    background: #fff;
+    padding: 1rem 1rem 0 1rem;
+}
+
+.card-website-view .share{
+    margin: 1.5rem 0;
+}
+
+/*end: store*/
+
+/*start: comments*/
+.comments{
+    margin: 4rem 0 8rem;
+}
+/*end: comments*/
+
+/*start: about*/
+.card-about-view h1{
+    margin: 0 auto;
+    padding: 0;
+    color: #000;
+    font-family: medium-content-serif-font, "Roboto Slab", Georgia, Cambria, "Times New Roman", Times, serif;
+    font-weight: normal;
+    margin-bottom: .5rem;
+}
+.card-about-view p.lead{
+    color: #000;
+    font-family: medium-content-serif-font, "Roboto Slab", Georgia, Cambria, "Times New Roman", Times, serif;
+    font-weight: 200;
+    text-align: center;
+}
+.card-about-view p{
+    text-align: justify;
+    color: #000;
+    font-family: medium-content-serif-font, "Roboto Slab", Georgia, Cambria, "Times New Roman", Times, serif;
+}
+.card-about-view img{
+    height: auto!important;
+    width: 100%!important;
+    margin-bottom: 2rem;
+}
+/*end: about*/
+
+
+/*start: share*/
+.share .btn{color: #fff;margin:0 .25rem}
+.share .facebook{background: #3b5998;}
+.share .twitter{background: #00acee;}
+.share .pinterest{background: #c8232c;}
+/*end: share*/
+
+/*start: mobile*/
+@media(min-width:992px){
+    .navbar-brand-mobile{
+        display: none!important;
+    }
+    .navbar-brand-light{
+        display: inline-block!important;
+    }
+    .header-global{background: transparent;}
+}
+
+@media (max-width: 991px){
+    .navbar-brand-mobile{
+        display: inline-block!important;
+        height: 42px!important;
+        padding: 0;
+        margin: 1rem 0 1rem 10px;
+    }
+    .navbar-brand-light{
+        display: none!important;
+    }
+
+    .header-global{background:#000; margin-bottom: 2rem;}
+    .navbar-main{position: absolute;}
+
+    .navbar-toggler {
+        position: absolute!important;
+        right: 0;
+        top: 16px;
+        color: #fff!important;
+        font-size: 1.5rem;
+
+    }
+
+    .navbar-collapse .collapse-brand img{
+        height: 70px!important;
+    }
+
+    .navbar .navbar-nav .nav-link{
+        color: #000;
+        font-family: medium-content-serif-font, "Roboto Slab", Georgia, Cambria, "Times New Roman", Times, serif;
+        font-weight: 300;
+        font-size: 1.1rem;
+    }
+
+    .navbar-light .navbar-toggler-icon{
+        background: none;
+    }
+
+    .navbar-light .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'><path stroke='rgba(255, 255, 255, 0.9)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+        background-repeat: no-repeat;
+        color: #fff!important;
+        font-size: 1.5rem;
+    }
+
+
+    .card-website .card-img {
+        width: 50%;
+        margin-top: .5rem;
+    }
+    .card-website .card-body{
+        text-align: center!important;
+    }
+    .card-website .card-rating{
+        display: none!important;
+    }
+
+
+    .share .btn {
+        display: block;
+        margin: 1rem 0;
+    }
+    
+}
+
+/*end: mobile*/
