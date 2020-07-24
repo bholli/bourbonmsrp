@@ -244,21 +244,22 @@ $(document).ready(function () {
     var $navbarCollapse = $('.navbar-main .collapse');
 
     // Collapse navigation
+    /*
     $navbarCollapse.on('hide.bs.collapse', function () {
         var $this = $(this);
         $this.addClass('collapsing-out');
         $('html, body').css('overflow', 'initial');
     });
-
+    */
     $navbarCollapse.on('hidden.bs.collapse', function () {
         var $this = $(this);
         $this.removeClass('collapsing-out');
     });
-
+    /*
     $navbarCollapse.on('shown.bs.collapse', function () {
         $('html, body').css('overflow', 'hidden');
     });
-
+    */
     $('.navbar-main .dropdown').on('hide.bs.dropdown', function () {
         var $this = $(this).find('.dropdown-menu');
 

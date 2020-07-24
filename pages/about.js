@@ -56,7 +56,7 @@ const About = () => (
                                 My name is Brandon, and <s>I built</s> <em>I'm building</em> BourbonMSRP.com.
                             </p>
 
-                            <img src="/assets/img/me.jpg" alt="brandon holliday photo, bourbonmsrp.com developer" className="card-img-top rounded-xl p-2" />
+                            <img src="/assets/img/me2.jpg" alt="brandon holliday photo, bourbonmsrp.com developer" className="card-img-top rounded-xl p-2" />
                             <p>
                                 It all started in the Fall of 2018...
                             </p>

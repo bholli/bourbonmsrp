@@ -296,7 +296,7 @@ main{
 @media (max-width: 991px){
     .navbar-brand-mobile{
         display: inline-block!important;
-        height: 42px!important;
+        height: 60px!important;
         padding: 0;
         margin: 1rem 0 1rem 10px;
     }
@@ -307,10 +307,14 @@ main{
     .header-global{background:#000; margin-bottom: 2rem;}
     .navbar-main{position: absolute;}
 
+    .navbar-collapse.show{
+        position: fixed;
+    }
+
     .navbar-toggler {
         position: absolute!important;
         right: 0;
-        top: 16px;
+        top: 25px;
         color: #fff!important;
         font-size: 1.5rem;
 

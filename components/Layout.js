@@ -5,7 +5,6 @@ import Footer from './Footer'
 import Scripts from './Scripts'
 import ReactGA from 'react-ga'
 
-
 export default class Layout extends React.Component{
     componentDidMount() {
         ReactGA.initialize('UA-2006061-62');
