@@ -94,7 +94,7 @@ const Page = ({bourbons}) => (
                         
                         {bourbons.map(bourbon => (
 
-                            <div className="_item col-12 col-sm-12 col-md-4 col-lg-3 col-xl-2 mt-6 card-bourbon animate-up-5" key={bourbon.id}>
+                            <div className="_item col-6 col-sm-6 col-md-4 col-lg-3 col-xl-2 mt-6 card-bourbon animate-up-5" key={bourbon.id}>
                                 <Link href='/bourbons/[slug]' as={`/bourbons/${bourbon.slug}`}>
                                     <a> 
                                         <div className="card border-light text-center">

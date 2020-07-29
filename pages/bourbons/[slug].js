@@ -24,13 +24,13 @@ const Bourbon = ({ bourbon }) => {
             <meta property="og:type" content="website"/>
             <meta property="og:url" content={"https://www.bourbonmsrp.com/bourbons/" + bourbon[0].slug}/>
             <meta property="og:title" content={"What is the MSRP of " + bourbon[0].name + "?"}/>
-            <meta property="og:description" content={"What is the MSRP of " + bourbon[0].name + "? According to a number of sources, the price of" + bourbon[0].name + " is around $" + bourbon[0].msrp}/>
+            <meta property="og:description" content={"What is the MSRP of " + bourbon[0].name + "? According to a number of sources, the price of " + bourbon[0].name + " is around $" + bourbon[0].msrp}/>
             <meta property="og:image" content={"https://api.bourbonspotter.com" + bourbon[0].image.url}/>
 
             <meta property="twitter:card" content="summary_large_image"/>
             <meta property="twitter:url" content={"https://www.bourbonmsrp.com/bourbons/" + bourbon[0].slug}/>
             <meta property="twitter:title" content={"What is the MSRP of " + bourbon[0].name + "?"}/>
-            <meta property="twitter:description" content={"What is the MSRP of " + bourbon[0].name + "? According to a number of sources, the price of" + bourbon[0].name + " is around $" + bourbon[0].msrp}/>
+            <meta property="twitter:description" content={"What is the MSRP of " + bourbon[0].name + "? According to a number of sources, the price of " + bourbon[0].name + " is around $" + bourbon[0].msrp}/>
             <meta property="twitter:image" content={"https://api.bourbonspotter.com" + bourbon[0].image.url}/>
 
             <link rel="apple-touch-icon" sizes="120x120" href="/assets/img/favicon/apple-touch-icon.png"/>
